@@ -33,7 +33,8 @@
         height: 30px;
       }
       .mails {
-        width: 500px;
+        width: 100%;
+        max-width: 500px;
       }
       .checked {
         color: orange;
@@ -42,7 +43,6 @@
       .parent {
         display: flex;
         flex-wrap: wrap;
-        
       }
       .check {
         display: flex;
@@ -55,33 +55,31 @@
         height: 40px;
         align-items: center;
         flex-wrap: wrap;
-        
-        
       }
       .container {
-        text-align: center;
+        text-align: left;
       }
     </style>
   </head>
   <body>
-    <form>
-      <div class="row">
-        <label class="mandatory"><b>Name</b></label>
-        <div class="col-lg-3">
-          <input type="text" class="form-control alter" />First
+    <div class="container">
+      <form>
+        <div class="mb-3 row">
+          <label class="mandatory col-12"><b>Name</b></label>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+            <input type="text" class="form-control alter" placeholder="First" />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+            <input type="text" class="form-control alter" placeholder="Last" />
+          </div>
         </div>
-        <div class="col-lg-3">
-          <input type="text" class="form-control alter" />Last
+        <div class="mb-3">
+          <label class="mandatory"><b>Email</b></label>
+          <div>
+            <input type="text" class="form-control mails" />
+          </div>
         </div>
-      </div>
-      <br/>
-      <div>
-        <label class="mandatory"><b>Email</b></label>
-        <div>
-          <input type="text" class="form-control mails" />
-        </div>
-        <br />
-        <div>
+        <div class="mb-3">
           <label class="mandatory"><b>Your Experience</b></label>
           <div>
             <span class="fa fa-star checked"></span>
@@ -92,191 +90,97 @@
           </div>
           <div>
             <p style="font-size: small">
-              Overall, how would you rate you experience with us?
+              Overall, how would you rate your experience with us?
             </p>
           </div>
         </div>
-        <br />
-        <div>
+        <div class="mb-3">
           <label class="mandatory"><b>How satisfied are you with</b></label>
           <div class="parent container">
-            <div class="col-sm-2">Very Unsatisfied</div>
-            <div class="col-sm-2">Unsatisfied</div>
-            <div class="col-sm-2">Neutral</div>
-            <div class="col-sm-2">Satisfied</div>
-            <div class="col-sm-2">Very Satisfied</div>
+            <div class="row w-100">
+              <div class="col-sm-2 col-4">Very Unsatisfied</div>
+              <div class="col-sm-2 col-4">Unsatisfied</div>
+              <div class="col-sm-2 col-4">Neutral</div>
+              <div class="col-sm-2 col-4">Satisfied</div>
+              <div class="col-sm-2 col-4">Very Satisfied</div>
+            </div>
           </div>
         </div>
-        </div>
-        </div>
-        </form>
-        <div class="check">
-            <div class=" check container">
-                <div class="col-sm-2">Purchase</div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
+        <div class="check mb-3">
+          <div class="container">
+            <div class="row w-100">
+              <div class="col-sm-2 col-4">Purchase</div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
             </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-          </div>
           </div>
         </div>
-          
-         
-          <div class="check1 ">
-            <div class=" container">
-              <div class="col-sm-2">Service</div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            </div>
-            </div>
-          </div>
-          <div class="check">
-          <div class="check container">
-            <div class="col-sm-2">Company Overall</div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                style="border-color: black"
-              />
-            </div>
-            <div class="col-sm-2">
-              <input
-                class="form-check-input"
-                type="radio"
-                
-                style="border-color: black"
-              />
-            </div>
-          </div>
-          </div><br>
-          <div>
-            <label class="mandatory"><b>How Likely are you to</b></label>
-            <div class="parent container">
-              <div class="col-sm-2">Very Likely</div>
-              <div class="col-sm-2">Unlikely</div>
-              <div class="col-sm-2">Neutral</div>
-              <div class="col-sm-2">Likely</div>
-              <div class="col-sm-2">Very Likely</div>
-            </div>
-            <div class="check">
-            <div class="check container">
-              <div class="col-sm-2">Buy from us again</div>
-              <div class="col-sm-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2">
+        <div class="check1 mb-3">
+          <div class="container">
+            <div class="row w-100">
+              <div class="col-sm-2 col-4">Service</div>
+              <div class="col-sm-2 col-2">
                 <input
                   class="form-check-input"
                   type="radio"
                   style="border-color: black"
                 />
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 col-2">
                 <input
                   class="form-check-input"
                   type="radio"
                   style="border-color: black"
                 />
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 col-2">
                 <input
                   class="form-check-input"
                   type="radio"
                   style="border-color: black"
                 />
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
                 <input
                   class="form-check-input"
                   type="radio"
@@ -285,77 +189,40 @@
               </div>
             </div>
           </div>
-           
-            <div class="check1 container">
-              <div class="col-sm-2">Recommend our products to others</div>
-              <div class="col-sm-2">
+        </div>
+        <div class="check mb-3">
+          <div class="container">
+            <div class="row w-100">
+              <div class="col-sm-2 col-4">Company Overall</div>
+              <div class="col-sm-2 col-2">
                 <input
                   class="form-check-input"
                   type="radio"
                   style="border-color: black"
                 />
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 col-2">
                 <input
                   class="form-check-input"
                   type="radio"
                   style="border-color: black"
                 />
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 col-2">
                 <input
                   class="form-check-input"
                   type="radio"
                   style="border-color: black"
                 />
               </div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 col-2">
                 <input
                   class="form-check-input"
                   type="radio"
                   style="border-color: black"
                 />
               </div>
-              <div class="col-sm-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-            </div>
-            <div class="check">
-            <div class="check container">
-              <div class="col-sm-2">Recommend our company to others</div>
-              <div class="col-sm-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2">
+              <div class="col-sm-2 col-2">
                 <input
                   class="form-check-input"
                   type="radio"
@@ -363,15 +230,161 @@
                 />
               </div>
             </div>
-            </div><br>
-            <div><b>Additional comments or suggesstions</b></div>
-              <textarea cols="100" rows="5">
-                 </textarea>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label class="mandatory"><b>How Likely are you to</b></label>
+          <div class="parent container">
+            <div class="row w-100">
+              <div class="col-sm-2 col-4">Very Likely</div>
+              <div class="col-sm-2 col-4">Unlikely</div>
+              <div class="col-sm-2 col-4">Neutral</div>
+              <div class="col-sm-2 col-4">Likely</div>
+              <div class="col-sm-2 col-4">Very Likely</div>
             </div>
-            <div>
-              <button style="height: 30px; width: 60px;" type="submit" name="Submit">submit
+          </div>
+        </div>
+        <div class="check mb-3">
+          <div class="container">
+            <div class="row w-100">
+              <div class="col-sm-2 col-4">Buy from us again</div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
             </div>
-   
+          </div>
+        </div>
+        <div class="check1 mb-3">
+          <div class="container">
+            <div class="row w-100">
+              <div class="col-sm-2 col-4">Recommend our products to others</div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check mb-3">
+          <div class="container">
+            <div class="row w-100">
+              <div class="col-sm-2 col-4">Recommend our company to others</div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+              <div class="col-sm-2 col-2">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  style="border-color: black"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <b>Additional comments or suggestions</b>
+          <textarea class="form-control" rows="5"></textarea>
+        </div>
+        <div class="text-center mb-3">
+          <button
+            style="height: 30px; width: 60px;"
+            type="submit"
+            name="Submit"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
     <script src="js/addons/rating.js"></script>
   </body>
 </html>
