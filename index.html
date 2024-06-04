@@ -4,19 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-    />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <!--  Add bootstrap icon Library  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,58 +15,35 @@
         content: "*";
         color: red;
       }
-      .alter {
-        display: flex;
-        font-size: x-small;
-        width: auto;
-        height: 30px;
-      }
-      .mails {
-        width: 100%;
-        max-width: 500px;
-      }
       .checked {
         color: orange;
         font-size: 20px;
       }
-      .parent {
-        display: flex;
-        flex-wrap: wrap;
+      /* .table-custom th {
+        background-color: #28a745 !important; 
       }
-      .check {
-        display: flex;
-        height: 40px;
-        align-items: center;
-        background-color: lightgrey;
-      }
-      .check1 {
-        display: flex;
-        height: 40px;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .container {
-        text-align: left;
-      }
+       */
+      
+      
+      
     </style>
   </head>
   <body>
-    <div class="container">
+    
+    <div class="container mt-4">
       <form>
         <div class="mb-3 row">
           <label class="mandatory col-12"><b>Name</b></label>
           <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <input type="text" class="form-control alter" placeholder="First" />
+            <input type="text" class="form-control" placeholder="First" />
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
-            <input type="text" class="form-control alter" placeholder="Last" />
+            <input type="text" class="form-control" placeholder="Last" />
           </div>
         </div>
         <div class="mb-3">
           <label class="mandatory"><b>Email</b></label>
-          <div>
-            <input type="text" class="form-control mails" />
-          </div>
+          <input type="email" class="form-control"  placeholder="Email"/>
         </div>
         <div class="mb-3">
           <label class="mandatory"><b>Your Experience</b></label>
@@ -96,278 +62,88 @@
         </div>
         <div class="mb-3">
           <label class="mandatory"><b>How satisfied are you with</b></label>
-          <div class="parent container">
-            <div class="row w-100">
-              <div class="col-sm-2 col-4">Very Unsatisfied</div>
-              <div class="col-sm-2 col-4">Unsatisfied</div>
-              <div class="col-sm-2 col-4">Neutral</div>
-              <div class="col-sm-2 col-4">Satisfied</div>
-              <div class="col-sm-2 col-4">Very Satisfied</div>
-            </div>
-          </div>
-        </div>
-        <div class="check mb-3">
-          <div class="container">
-            <div class="row w-100">
-              <div class="col-sm-2 col-4">Purchase</div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="check1 mb-3">
-          <div class="container">
-            <div class="row w-100">
-              <div class="col-sm-2 col-4">Service</div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="check mb-3">
-          <div class="container">
-            <div class="row w-100">
-              <div class="col-sm-2 col-4">Company Overall</div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-            </div>
+          <div class="table-responsive">
+            <table  class="table table-bordered text-center ">
+              <thead  class="table-primary">
+                <tr>
+                  <th>#</th>
+                  <th>Very Unsatisfied</th>
+                  <th>Unsatisfied</th>
+                  <th>Neutral</th>
+                  <th>Satisfied</th>
+                  <th>Very Satisfied</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-active">
+                  <td>Purchase</td>
+                  <td><input  name="dot1" type="radio" /></td>
+                  <td><input  name="dot1" type="radio" /></td>
+                  <td><input name="dot1" type="radio" /></td>
+                  <td><input  name="dot1" type="radio" /></td>
+                  <td><input  name="dot1" type="radio" /></td>
+                </tr>
+                <tr >
+                  <td>Service</td>
+                  <td><input  name="dot2" type="radio" /></td>
+                  <td><input  name="dot2" type="radio" /></td>
+                  <td><input name="dot2" type="radio" /></td>
+                  <td><input name="dot2" type="radio" /></td>
+                  <td><input name="dot2" type="radio" /></td>
+                </tr>
+                <tr class="table-active">
+                  <td>Company Overall</td>
+                  <td><input name="dot7" type="radio" /></td>
+                  <td><input name="dot7" type="radio" /></td>
+                  <td><input  name="dot7" type="radio" /></td>
+                  <td><input  name="dot7" type="radio" /></td>
+                  <td><input name="dot7" type="radio" /></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <div class="mb-3">
           <label class="mandatory"><b>How Likely are you to</b></label>
-          <div class="parent container">
-            <div class="row w-100">
-              <div class="col-sm-2 col-4">Very Likely</div>
-              <div class="col-sm-2 col-4">Unlikely</div>
-              <div class="col-sm-2 col-4">Neutral</div>
-              <div class="col-sm-2 col-4">Likely</div>
-              <div class="col-sm-2 col-4">Very Likely</div>
-            </div>
-          </div>
-        </div>
-        <div class="check mb-3">
-          <div class="container">
-            <div class="row w-100">
-              <div class="col-sm-2 col-4">Buy from us again</div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="check1 mb-3">
-          <div class="container">
-            <div class="row w-100">
-              <div class="col-sm-2 col-4">Recommend our products to others</div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="check mb-3">
-          <div class="container">
-            <div class="row w-100">
-              <div class="col-sm-2 col-4">Recommend our company to others</div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-              <div class="col-sm-2 col-2">
-                <input
-                  class="form-check-input"
-                  type="radio"
-                  style="border-color: black"
-                />
-              </div>
-            </div>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center table-custom">
+              <thead  class="table-primary">
+                <tr>
+                  <th>#</th>
+                  <th>Very Likely</th>
+                  <th>Unlikely</th>
+                  <th>Neutral</th>
+                  <th>Likely</th>
+                  <th>Very Likely</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table-active">
+                  <td>Buy from us again</td>
+                  <td><input  name="dot3" type="radio" /></td>
+                  <td><input  name="dot3" type="radio" /></td>
+                  <td><input  name="dot3" type="radio" /></td>
+                  <td><input  name="dot3" type="radio" /></td>
+                  <td><input  name="dot3" type="radio" /></td>
+                </tr>
+                <tr>
+                  <td>Recommend our products to others</td>
+                  <td><input  name="dot4" type="radio" /></td>
+                  <td><input  name="dot4" type="radio" /></td>
+                  <td><input  name="dot4" type="radio" /></td>
+                  <td><input  name="dot4" type="radio" /></td>
+                  <td><input  name="dot4" type="radio" /></td>
+                </tr>
+                <tr class="table-active">
+                  <td>Recommend our company to others</td>
+                  <td><input  name="dot5" type="radio" /></td>
+                  <td><input name="dot5" type="radio" /></td>
+                  <td><input  name="dot5" type="radio" /></td>
+                  <td><input  name="dot5" type="radio" /></td>
+                  <td><input  name="dot5" type="radio" /></td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
         <div class="mb-3">
@@ -375,16 +151,12 @@
           <textarea class="form-control" rows="5"></textarea>
         </div>
         <div class="text-center mb-3">
-          <button
-            style="height: 30px; width: 60px;"
-            type="submit"
-            name="Submit"
-          >
-            Submit
-          </button>
+          <button class="btn btn-primary" type="submit">Submit</button>
         </div>
       </form>
     </div>
-    <script src="js/addons/rating.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  
   </body>
 </html>
